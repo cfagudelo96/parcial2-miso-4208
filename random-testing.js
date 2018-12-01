@@ -1,78 +1,67 @@
-(function() {
-  const shelljs = require('shelljs');
-  const mongoose = require('mongoose');
+/*jshint esversion: 6 */
 
-  mongoose.connect('mongodb://localhost:27017/parcial2', { useNewUrlParser: true });
+const shelljs = require('shelljs');
+const fs = require('fs');
 
-  const db = mongoose.connection;
+const mutantsFolder = '/Users/cfagudelo/Documents/Projects/parcial2';
+const adbFolder = '/Users/cfagudelo/Library/Android/sdk/platform-tools';
+const apksignerFolder = '/Users/cfagudelo/Library/Android/sdk/build-tools/28.0.3';
+const keystore = `${apksignerFolder}/mykeystore.keystore`;
 
-  db.once('open', async function () {
-    const randomTestingErrorSchema = new mongoose.Schema({
-      mutant: { type: Number, required: true },
-      log: { type: String, required: true },
-      seed: { type: Number, required: true }
-    });
+const appPackageName = 'com.evancharlton.mileage';
+const apkName = `${appPackageName}_3110.apk`;
 
-    const RandomTestingError = mongoose.model('RandomTestingError', randomTestingErrorSchema);
+const numberOfExecutions = 5;
+const numberOfEvents = 5000;
+const numberOfMutants = 5000;
 
-    const mutantsFolder = '/Users/cfagudelo/Documents/Projects/parcial2';
-    const adbFolder = '/Users/cfagudelo/Library/Android/sdk/platform-tools';
-    const apksignerFolder = '/Users/cfagudelo/Library/Android/sdk/build-tools/28.0.3';
-    const keystore = `${apksignerFolder}/mykeystore.keystore`
+function getMutantFolder(index) {
+  return `${mutantsFolder}/${appPackageName}-mutant${index}`;
+}
 
-    const appPackageName = 'com.evancharlton.mileage';
-    const apkName = `${appPackageName}_3110.apk`
+function mutantFolderExists(mutantFolder) {
+  return shelljs.test('-d', mutantFolder);
+}
 
-    const numberOfExecutions = 5;
-    const numberOfEvents = 5000;
-    const numberOfMutants = 5000;
+function signMutantApk(mutantFolder) {
+  shelljs.exec(`${apksignerFolder}/apksigner sign --ks ${keystore} --ks-pass pass:123456 --key-pass pass:123456 --out ${mutantFolder}/signed.apk ${mutantFolder}/${apkName}`);
+}
 
-    function getMutantFolder(index) {
-      return `${mutantsFolder}/${appPackageName}-mutant${index}`;
+function uninstallApp() {
+  shelljs.exec(`${adbFolder}/adb uninstall ${appPackageName}`);
+}
+
+function installMutantApk(mutantFolder) {
+  signMutantApk(mutantFolder);
+  shelljs.exec(`${adbFolder}/adb install -r ${mutantFolder}/signed.apk`);
+}
+
+function executionHadErrors(execution) {
+  try {
+    const eventsInjectedText = execution.stdout.match(new RegExp(/Events injected: (\d+)(\D*|$)/));
+    const eventsInjected = parseInt(eventsInjectedText[1]);
+    return eventsInjected !== numberOfEvents;
+  } catch(e) {
+    return true;
+  }
+}
+
+async function runMonkey(mutant) {
+  const seed = Math.floor(Math.random() * 100000000) + 1
+  const execution = shelljs.exec(`${adbFolder}/adb shell monkey -p ${appPackageName} -s ${seed} --kill-process-after-error ${numberOfEvents}`);
+  if (executionHadErrors(execution)) {
+    fs.writeFileSync(`./reports/mutant${mutant}-seed${seed}-${new Date().getTime()}.txt`, execution.stdout);
+  }
+}
+
+for (let k = 0; k < numberOfExecutions; k++) {
+  for (let i = 0; i < numberOfMutants; i++) {
+    const mutantFolder = getMutantFolder(i);
+    if (mutantFolderExists(mutantFolder)) {
+      installMutantApk(mutantFolder);
+      runMonkey(i);
+      uninstallApp();
     }
-
-    function mutantFolderExists(mutantFolder) {
-      return shelljs.test('-d', mutantFolder);
-    }
-
-    function signMutantApk(mutantFolder) {
-      shelljs.exec(`${apksignerFolder}/apksigner sign --ks ${keystore} --ks-pass pass:123456 --key-pass pass:123456 --out ${mutantFolder}/signed.apk ${mutantFolder}/${apkName}`);
-    }
-
-    function uninstallApp() {
-      shelljs.exec(`${adbFolder}/adb uninstall ${appPackageName}`);
-    }
-
-    function installMutantApk(mutantFolder) {
-      signMutantApk(mutantFolder);
-      shelljs.exec(`${adbFolder}/adb install -r ${mutantFolder}/signed.apk`);
-    }
-
-    async function runMonkey(mutant) {
-      const seed = Math.floor(Math.random() * 100000000) + 1
-      const execution = shelljs.exec(`${adbFolder}/adb shell monkey -p ${appPackageName} -s ${seed} --kill-process-after-error ${numberOfEvents}`);
-      if (executionHadErrors(execution)) {
-        await new RandomTestingError({ mutant: mutant, log: execution.stdout, seed: seed }).save();
-      }
-    }
-
-    function executionHadErrors(execution) {
-      const eventsInjectedText = execution.stdout.match(new RegExp(/Events injected: (\d+)(\D*|$)/));
-      if (!eventsInjectedText || eventsInjectedText.length < 1 || isNaN(eventsInjected[1])) return true;
-      const eventsInjected = parseInt(eventsInjectedText[1]);
-      return eventsInjected != numberOfEvents;
-    }
-
-    for (let k = 0; k < numberOfExecutions; k++) {
-      for (let i = 0; i < numberOfMutants; i++) {
-        const mutantFolder = getMutantFolder(i);
-        if (mutantFolderExists(mutantFolder)) {
-          installMutantApk(mutantFolder);
-          runMonkey(i);
-          uninstallApp();
-        }
-      }
-    }
-    process.exit();
-  });
-})();
+  }
+}
+process.exit();

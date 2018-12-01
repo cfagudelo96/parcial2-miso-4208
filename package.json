@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/cfagudelo96/parcial2-miso-4208#readme",
   "dependencies": {
-    "mongoose": "^5.3.14",
     "shelljs": "^0.8.3"
   }
 }
