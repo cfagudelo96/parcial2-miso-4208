@@ -1,0 +1,24 @@
+{
+  "name": "parcial2-miso-4208",
+  "version": "1.0.0",
+  "description": "parcial2-miso-4208",
+  "main": "index.js",
+  "scripts": {
+    "random-testing": "node ./random-testing.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfagudelo96/parcial2-miso-4208.git"
+  },
+  "author": "cf.agudelo12@uniandes.edu.co",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cfagudelo96/parcial2-miso-4208/issues"
+  },
+  "homepage": "https://github.com/cfagudelo96/parcial2-miso-4208#readme",
+  "dependencies": {
+    "mongoose": "^5.3.14",
+    "shelljs": "^0.8.3"
+  }
+}
