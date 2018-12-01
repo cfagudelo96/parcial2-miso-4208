@@ -57,7 +57,9 @@
     }
 
     function executionHadErrors(execution) {
-      const eventsInjected = parseInt(execution.stdout.match(new RegExp(/Events injected: (\d+)(\D*|$)/))[1]);
+      const eventsInjectedText = execution.stdout.match(new RegExp(/Events injected: (\d+)(\D*|$)/));
+      if (!eventsInjectedText || eventsInjectedText.length < 1 || isNaN(eventsInjected[1])) return true;
+      const eventsInjected = parseInt(eventsInjectedText[1]);
       return eventsInjected != numberOfEvents;
     }
 
