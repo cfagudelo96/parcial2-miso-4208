@@ -1,0 +1,71 @@
+// CRASH: com.evancharlton.mileage (pid 27510)
+// Short Msg: android.content.res.Resources$NotFoundException
+// Long Msg: android.content.res.Resources$NotFoundException: String resource ID #0x0
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.VehicleStatisticsActivity}: android.content.res.Resources$NotFoundException: String resource ID #0x0
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2325)
+// 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2149)
+// 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+// 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+// 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:756)
+// 	at android.widget.TabHost.setCurrentTab(TabHost.java:420)
+// 	at android.widget.TabHost$2.onTabSelectionChanged(TabHost.java:161)
+// 	at android.widget.TabWidget.onFocusChange(TabWidget.java:527)
+// 	at android.view.View.onFocusChanged(View.java:5206)
+// 	at android.view.View.handleFocusGainInternal(View.java:4962)
+// 	at android.view.ViewGroup.handleFocusGainInternal(ViewGroup.java:638)
+// 	at android.view.View.requestFocusNoSearch(View.java:7678)
+// 	at android.view.View.requestFocus(View.java:7657)
+// 	at android.view.ViewGroup.requestFocus(ViewGroup.java:2599)
+// 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:4096)
+// 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:3982)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3544)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3597)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3563)
+// 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3680)
+// 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3571)
+// 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:3737)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3544)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3597)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3563)
+// 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3571)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3544)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3597)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3563)
+// 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3713)
+// 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:3874)
+// 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2208)
+// 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:1849)
+// 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:1840)
+// 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2185)
+// 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+// 	at android.os.MessageQueue.nativePollOnce(Native Method)
+// 	at android.os.MessageQueue.next(MessageQueue.java:143)
+// 	at android.os.Looper.loop(Looper.java:122)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// Caused by: android.content.res.Resources$NotFoundException: String resource ID #0x0
+// 	at android.content.res.Resources.getText(Resources.java:299)
+// 	at android.content.res.Resources.getString(Resources.java:385)
+// 	at android.content.Context.getString(Context.java:377)
+// 	at com.evancharlton.mileage.provider.Statistic.getLabel(Statistic.java:37)
+// 	at com.evancharlton.mileage.adapters.VehicleStatisticsAdapter$StatisticHolder.<init>(VehicleStatisticsAdapter.java:203)
+// 	at com.evancharlton.mileage.adapters.VehicleStatisticsAdapter.<init>(VehicleStatisticsAdapter.java:50)
+// 	at com.evancharlton.mileage.VehicleStatisticsActivity.setAdapter(VehicleStatisticsActivity.java:197)
+// 	at com.evancharlton.mileage.VehicleStatisticsActivity.recalculate(VehicleStatisticsActivity.java:175)
+// 	at com.evancharlton.mileage.VehicleStatisticsActivity.onCreate(VehicleStatisticsActivity.java:131)
+// 	at android.app.Activity.performCreate(Activity.java:5990)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+// 	... 43 more
+// 
+    // Injection Failed
+** Monkey aborted due to error.
+Events injected: 18
+## Network stats: elapsed time=1511ms (0ms mobile, 0ms wifi, 1511ms not connected)
+** System appears to have crashed at event 18 of 5000 using seed 48617649

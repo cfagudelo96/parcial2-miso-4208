@@ -1,0 +1,16 @@
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+// CRASH: com.evancharlton.mileage (pid 19609)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: Attempt to read from field 'com.evancharlton.mileage.dao.Vehicle com.evancharlton.mileage.adapters.VehicleStatisticsAdapter.mVehicle' on a null object reference
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.NullPointerException: Attempt to read from field 'com.evancharlton.mileage.dao.Vehicle com.evancharlton.mileage.adapters.VehicleStatisticsAdapter.mVehicle' on a null object reference
+// 	at com.evancharlton.mileage.adapters.VehicleStatisticsAdapter.access$000(VehicleStatisticsAdapter.java:25)
+// 	at com.evancharlton.mileage.adapters.VehicleStatisticsAdapter$1.run(VehicleStatisticsAdapter.java:81)
+// 
+** Monkey aborted due to error.
+Events injected: 43
+## Network stats: elapsed time=2610ms (0ms mobile, 0ms wifi, 2610ms not connected)
+** System appears to have crashed at event 43 of 5000 using seed 27085172

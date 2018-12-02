@@ -1,0 +1,89 @@
+// CRASH: com.evancharlton.mileage (pid 15814)
+// Short Msg: java.lang.VerifyError
+// Long Msg: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.ChartActivity because it failed compile-time verification (declaration of 'com.evancharlton.mileage.ChartActivity' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.VerifyError: Rejecting class com.evancharlton.mileage.charts.AverageCostChart that attempts to sub-class erroneous class com.evancharlton.mileage.charts.CostChart (declaration of 'com.evancharlton.mileage.charts.AverageCostChart' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	at java.lang.reflect.Constructor.newInstance(Native Method)
+// 	at java.lang.Class.newInstance(Class.java:1606)
+// 	at android.app.Instrumentation.newActivity(Instrumentation.java:1066)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2226)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+// 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// Caused by: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.charts.CostChart that attempts to sub-class erroneous class com.evancharlton.mileage.charts.LineChart (declaration of 'com.evancharlton.mileage.charts.CostChart' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	... 14 more
+// Caused by: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.charts.LineChart that attempts to sub-class erroneous class com.evancharlton.mileage.ChartActivity (declaration of 'com.evancharlton.mileage.charts.LineChart' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	... 14 more
+// Caused by: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.ChartActivity because it failed compile-time verification (declaration of 'com.evancharlton.mileage.ChartActivity' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	... 14 more
+// 
+// CRASH: com.evancharlton.mileage (pid 15858)
+// Short Msg: java.lang.VerifyError
+// Long Msg: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.ChartActivity because it failed compile-time verification (declaration of 'com.evancharlton.mileage.ChartActivity' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.VerifyError: Rejecting class com.evancharlton.mileage.charts.AverageCostChart that attempts to sub-class erroneous class com.evancharlton.mileage.charts.CostChart (declaration of 'com.evancharlton.mileage.charts.AverageCostChart' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	at java.lang.reflect.Constructor.newInstance(Native Method)
+// 	at java.lang.Class.newInstance(Class.java:1606)
+// 	at android.app.Instrumentation.newActivity(Instrumentation.java:1066)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2226)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+// 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// Caused by: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.charts.CostChart that attempts to sub-class erroneous class com.evancharlton.mileage.charts.LineChart (declaration of 'com.evancharlton.mileage.charts.CostChart' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	... 14 more
+// Caused by: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.charts.LineChart that attempts to sub-class erroneous class com.evancharlton.mileage.ChartActivity (declaration of 'com.evancharlton.mileage.charts.LineChart' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	... 14 more
+// Caused by: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.ChartActivity because it failed compile-time verification (declaration of 'com.evancharlton.mileage.ChartActivity' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	... 14 more
+// 
+// CRASH: com.evancharlton.mileage (pid 15876)
+// Short Msg: java.lang.VerifyError
+// Long Msg: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.ChartActivity because it failed compile-time verification (declaration of 'com.evancharlton.mileage.ChartActivity' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.VerifyError: Rejecting class com.evancharlton.mileage.charts.AverageCostChart that attempts to sub-class erroneous class com.evancharlton.mileage.charts.CostChart (declaration of 'com.evancharlton.mileage.charts.AverageCostChart' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	at java.lang.reflect.Constructor.newInstance(Native Method)
+// 	at java.lang.Class.newInstance(Class.java:1606)
+// 	at android.app.Instrumentation.newActivity(Instrumentation.java:1066)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2226)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+// 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// Caused by: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.charts.CostChart that attempts to sub-class erroneous class com.evancharlton.mileage.charts.LineChart (declaration of 'com.evancharlton.mileage.charts.CostChart' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	... 14 more
+// Caused by: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.charts.LineChart that attempts to sub-class erroneous class com.evancharlton.mileage.ChartActivity (declaration of 'com.evancharlton.mileage.charts.LineChart' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	... 14 more
+// Caused by: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.ChartActivity because it failed compile-time verification (declaration of 'com.evancharlton.mileage.ChartActivity' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	... 14 more
+// 
+    // Injection Failed
+** Monkey aborted due to error.
+Events injected: 174
+## Network stats: elapsed time=6636ms (0ms mobile, 0ms wifi, 6636ms not connected)
+** System appears to have crashed at event 174 of 5000 using seed 91722732

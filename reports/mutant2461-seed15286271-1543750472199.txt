@@ -1,0 +1,40 @@
+// CRASH: com.evancharlton.mileage (pid 30966)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ContentResolver com.evancharlton.mileage.VehicleStatisticsActivity.getContentResolver()' on a null object reference
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.VehicleStatisticsActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ContentResolver com.evancharlton.mileage.VehicleStatisticsActivity.getContentResolver()' on a null object reference
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2325)
+// 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2149)
+// 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+// 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+// 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:756)
+// 	at android.widget.TabHost.setCurrentTab(TabHost.java:420)
+// 	at android.widget.TabHost$2.onTabSelectionChanged(TabHost.java:161)
+// 	at android.widget.TabWidget$TabClickListener.onClick(TabWidget.java:549)
+// 	at android.view.View.performClick(View.java:4780)
+// 	at android.view.View$PerformClick.run(View.java:19866)
+// 	at android.os.Handler.handleCallback(Handler.java:739)
+// 	at android.os.Handler.dispatchMessage(Handler.java:95)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ContentResolver com.evancharlton.mileage.VehicleStatisticsActivity.getContentResolver()' on a null object reference
+// 	at com.evancharlton.mileage.tasks.VehicleStatisticsTask.attach(VehicleStatisticsTask.java:33)
+// 	at com.evancharlton.mileage.VehicleStatisticsActivity.calculate(VehicleStatisticsActivity.java:207)
+// 	at com.evancharlton.mileage.VehicleStatisticsActivity.recalculate(VehicleStatisticsActivity.java:170)
+// 	at com.evancharlton.mileage.VehicleStatisticsActivity.onCreate(VehicleStatisticsActivity.java:131)
+// 	at android.app.Activity.performCreate(Activity.java:5990)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+// 	... 17 more
+// 
+    // Injection Failed
+** Monkey aborted due to error.
+Events injected: 54
+## Network stats: elapsed time=1936ms (0ms mobile, 0ms wifi, 1936ms not connected)
+** System appears to have crashed at event 54 of 5000 using seed 15286271

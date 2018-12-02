@@ -1,0 +1,179 @@
+// CRASH: com.evancharlton.mileage (pid 1365)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: Attempt to invoke virtual method 'long java.util.Date.getTime()' on a null object reference
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #14: Error inflating class com.evancharlton.mileage.views.DateButton
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2325)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+// 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #14: Error inflating class com.evancharlton.mileage.views.DateButton
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2325)
+// 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2149)
+// 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+// 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+// 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:756)
+// 	at android.widget.TabHost.setCurrentTab(TabHost.java:420)
+// 	at android.widget.TabHost.addTab(TabHost.java:247)
+// 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+// 	at android.app.Activity.performCreate(Activity.java:5990)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+// 	... 10 more
+// Caused by: android.view.InflateException: Binary XML file line #14: Error inflating class com.evancharlton.mileage.views.DateButton
+// 	at android.view.LayoutInflater.createView(LayoutInflater.java:633)
+// 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:743)
+// 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:806)
+// 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:809)
+// 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:809)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:479)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:414)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:365)
+// 	at com.evancharlton.mileage.BaseFormActivity.onCreate(BaseFormActivity.java:37)
+// 	at com.evancharlton.mileage.FillupActivity.onCreate(FillupActivity.java:72)
+// 	at android.app.Activity.performCreate(Activity.java:5990)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+// 	... 20 more
+// Caused by: java.lang.reflect.InvocationTargetException
+// 	at java.lang.reflect.Constructor.newInstance(Native Method)
+// 	at java.lang.reflect.Constructor.newInstance(Constructor.java:288)
+// 	at android.view.LayoutInflater.createView(LayoutInflater.java:607)
+// 	... 32 more
+// Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long java.util.Date.getTime()' on a null object reference
+// 	at java.util.Calendar.setTime(Calendar.java:1195)
+// 	at com.evancharlton.mileage.views.DateButton.setDate(DateButton.java:86)
+// 	at com.evancharlton.mileage.views.DateButton.setDate(DateButton.java:92)
+// 	at com.evancharlton.mileage.views.DateButton.<init>(DateButton.java:49)
+// 	... 35 more
+// 
+// CRASH: com.evancharlton.mileage (pid 1382)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: Attempt to invoke virtual method 'long java.util.Date.getTime()' on a null object reference
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #14: Error inflating class com.evancharlton.mileage.views.DateButton
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2325)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+// 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #14: Error inflating class com.evancharlton.mileage.views.DateButton
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2325)
+// 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2149)
+// 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+// 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+// 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:756)
+// 	at android.widget.TabHost.setCurrentTab(TabHost.java:420)
+// 	at android.widget.TabHost.addTab(TabHost.java:247)
+// 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+// 	at android.app.Activity.performCreate(Activity.java:5990)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+// 	... 10 more
+// Caused by: android.view.InflateException: Binary XML file line #14: Error inflating class com.evancharlton.mileage.views.DateButton
+// 	at android.view.LayoutInflater.createView(LayoutInflater.java:633)
+// 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:743)
+// 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:806)
+// 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:809)
+// 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:809)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:479)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:414)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:365)
+// 	at com.evancharlton.mileage.BaseFormActivity.onCreate(BaseFormActivity.java:37)
+// 	at com.evancharlton.mileage.FillupActivity.onCreate(FillupActivity.java:72)
+// 	at android.app.Activity.performCreate(Activity.java:5990)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+// 	... 20 more
+// Caused by: java.lang.reflect.InvocationTargetException
+// 	at java.lang.reflect.Constructor.newInstance(Native Method)
+// 	at java.lang.reflect.Constructor.newInstance(Constructor.java:288)
+// 	at android.view.LayoutInflater.createView(LayoutInflater.java:607)
+// 	... 32 more
+// Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long java.util.Date.getTime()' on a null object reference
+// 	at java.util.Calendar.setTime(Calendar.java:1195)
+// 	at com.evancharlton.mileage.views.DateButton.setDate(DateButton.java:86)
+// 	at com.evancharlton.mileage.views.DateButton.setDate(DateButton.java:92)
+// 	at com.evancharlton.mileage.views.DateButton.<init>(DateButton.java:49)
+// 	... 35 more
+// 
+// CRASH: com.evancharlton.mileage (pid 1400)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: Attempt to invoke virtual method 'long java.util.Date.getTime()' on a null object reference
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #14: Error inflating class com.evancharlton.mileage.views.DateButton
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2325)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+// 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #14: Error inflating class com.evancharlton.mileage.views.DateButton
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2325)
+// 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2149)
+// 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+// 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+// 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:756)
+// 	at android.widget.TabHost.setCurrentTab(TabHost.java:420)
+// 	at android.widget.TabHost.addTab(TabHost.java:247)
+// 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+// 	at android.app.Activity.performCreate(Activity.java:5990)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+// 	... 10 more
+// Caused by: android.view.InflateException: Binary XML file line #14: Error inflating class com.evancharlton.mileage.views.DateButton
+// 	at android.view.LayoutInflater.createView(LayoutInflater.java:633)
+// 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:743)
+// 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:806)
+// 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:809)
+// 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:809)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:479)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:414)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:365)
+// 	at com.evancharlton.mileage.BaseFormActivity.onCreate(BaseFormActivity.java:37)
+// 	at com.evancharlton.mileage.FillupActivity.onCreate(FillupActivity.java:72)
+// 	at android.app.Activity.performCreate(Activity.java:5990)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+// 	... 20 more
+// Caused by: java.lang.reflect.InvocationTargetException
+// 	at java.lang.reflect.Constructor.newInstance(Native Method)
+// 	at java.lang.reflect.Constructor.newInstance(Constructor.java:288)
+// 	at android.view.LayoutInflater.createView(LayoutInflater.java:607)
+// 	... 32 more
+// Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long java.util.Date.getTime()' on a null object reference
+// 	at java.util.Calendar.setTime(Calendar.java:1195)
+// 	at com.evancharlton.mileage.views.DateButton.setDate(DateButton.java:86)
+// 	at com.evancharlton.mileage.views.DateButton.setDate(DateButton.java:92)
+// 	at com.evancharlton.mileage.views.DateButton.<init>(DateButton.java:49)
+// 	... 35 more
+// 
+    // Injection Failed
+** Monkey aborted due to error.
+Events injected: 2
+## Network stats: elapsed time=1017ms (0ms mobile, 0ms wifi, 1017ms not connected)
+** System appears to have crashed at event 2 of 5000 using seed 21670498

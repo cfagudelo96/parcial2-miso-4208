@@ -1,0 +1,125 @@
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    // activityResuming(com.evancharlton.mileage)
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    // Injection Failed
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    // activityResuming(com.evancharlton.mileage)
+    // activityResuming(com.evancharlton.mileage)
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // activityResuming(com.evancharlton.mileage)
+    // Injection Failed
+    // Injection Failed
+    // activityResuming(com.evancharlton.mileage)
+    // activityResuming(com.evancharlton.mileage)
+    // activityResuming(com.evancharlton.mileage)
+    // activityResuming(com.evancharlton.mileage)
+    // Injection Failed
+// CRASH: com.evancharlton.mileage (pid 32566)
+// Short Msg: java.lang.IllegalArgumentException
+// Long Msg: java.lang.IllegalArgumentException: View=com.android.internal.policy.impl.PhoneWindow$DecorView{2e18cd93 V.E..... R.....I. 0,0-1048,714} not attached to window manager
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.RuntimeException: Unable to pause activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.IllegalArgumentException: View=com.android.internal.policy.impl.PhoneWindow$DecorView{2e18cd93 V.E..... R.....I. 0,0-1048,714} not attached to window manager
+// 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3260)
+// 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3219)
+// 	at android.app.ActivityThread.handlePauseActivity(ActivityThread.java:3194)
+// 	at android.app.ActivityThread.access$1000(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1314)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// Caused by: java.lang.IllegalArgumentException: View=com.android.internal.policy.impl.PhoneWindow$DecorView{2e18cd93 V.E..... R.....I. 0,0-1048,714} not attached to window manager
+// 	at android.view.WindowManagerGlobal.findViewLocked(WindowManagerGlobal.java:396)
+// 	at android.view.WindowManagerGlobal.removeView(WindowManagerGlobal.java:322)
+// 	at android.view.WindowManagerImpl.removeViewImmediate(WindowManagerImpl.java:116)
+// 	at android.app.Dialog.dismissDialog(Dialog.java:341)
+// 	at android.app.Dialog.dismiss(Dialog.java:324)
+// 	at com.evancharlton.mileage.views.DateButton.onSaveInstanceState(DateButton.java:63)
+// 	at android.view.View.dispatchSaveInstanceState(View.java:13669)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:2865)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:2865)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:2865)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:2865)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:2865)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:2865)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:2865)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:2865)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:2865)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:2865)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:2865)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:2865)
+// 	at android.view.View.saveHierarchyState(View.java:13652)
+// 	at com.android.internal.policy.impl.PhoneWindow.saveHierarchyState(PhoneWindow.java:1967)
+// 	at android.app.Activity.onSaveInstanceState(Activity.java:1366)
+// 	at android.app.ActivityGroup.onSaveInstanceState(ActivityGroup.java:66)
+// 	at android.app.TabActivity.onSaveInstanceState(TabActivity.java:112)
+// 	at android.app.Activity.performSaveInstanceState(Activity.java:1298)
+// 	at android.app.Instrumentation.callActivityOnSaveInstanceState(Instrumentation.java:1288)
+// 	at android.app.ActivityThread.callCallActivityOnSaveInstanceState(ActivityThread.java:3958)
+// 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3242)
+// 	... 11 more
+// 
+** Monkey aborted due to error.
+Events injected: 3665
+## Network stats: elapsed time=58191ms (0ms mobile, 0ms wifi, 58191ms not connected)
+** System appears to have crashed at event 3665 of 5000 using seed 17854564

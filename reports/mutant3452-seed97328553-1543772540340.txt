@@ -1,0 +1,101 @@
+// CRASH: com.evancharlton.mileage (pid 7277)
+// Short Msg: java.lang.VerifyError
+// Long Msg: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.FillupActivity because it failed compile-time verification (declaration of 'com.evancharlton.mileage.FillupActivity' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.VerifyError: Rejecting class com.evancharlton.mileage.FillupActivity because it failed compile-time verification (declaration of 'com.evancharlton.mileage.FillupActivity' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	at java.lang.reflect.Constructor.newInstance(Native Method)
+// 	at java.lang.Class.newInstance(Class.java:1606)
+// 	at android.app.Instrumentation.newActivity(Instrumentation.java:1066)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2226)
+// 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2149)
+// 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+// 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+// 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:756)
+// 	at android.widget.TabHost.setCurrentTab(TabHost.java:420)
+// 	at android.widget.TabHost.addTab(TabHost.java:247)
+// 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+// 	at android.app.Activity.performCreate(Activity.java:5990)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+// 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// 
+// CRASH: com.evancharlton.mileage (pid 7295)
+// Short Msg: java.lang.VerifyError
+// Long Msg: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.FillupActivity because it failed compile-time verification (declaration of 'com.evancharlton.mileage.FillupActivity' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.VerifyError: Rejecting class com.evancharlton.mileage.FillupActivity because it failed compile-time verification (declaration of 'com.evancharlton.mileage.FillupActivity' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	at java.lang.reflect.Constructor.newInstance(Native Method)
+// 	at java.lang.Class.newInstance(Class.java:1606)
+// 	at android.app.Instrumentation.newActivity(Instrumentation.java:1066)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2226)
+// 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2149)
+// 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+// 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+// 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:756)
+// 	at android.widget.TabHost.setCurrentTab(TabHost.java:420)
+// 	at android.widget.TabHost.addTab(TabHost.java:247)
+// 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+// 	at android.app.Activity.performCreate(Activity.java:5990)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+// 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// 
+// CRASH: com.evancharlton.mileage (pid 7313)
+// Short Msg: java.lang.VerifyError
+// Long Msg: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.FillupActivity because it failed compile-time verification (declaration of 'com.evancharlton.mileage.FillupActivity' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.VerifyError: Rejecting class com.evancharlton.mileage.FillupActivity because it failed compile-time verification (declaration of 'com.evancharlton.mileage.FillupActivity' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	at java.lang.reflect.Constructor.newInstance(Native Method)
+// 	at java.lang.Class.newInstance(Class.java:1606)
+// 	at android.app.Instrumentation.newActivity(Instrumentation.java:1066)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2226)
+// 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2149)
+// 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+// 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+// 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:756)
+// 	at android.widget.TabHost.setCurrentTab(TabHost.java:420)
+// 	at android.widget.TabHost.addTab(TabHost.java:247)
+// 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+// 	at android.app.Activity.performCreate(Activity.java:5990)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+// 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// 
+    // Injection Failed
+** Monkey aborted due to error.
+Events injected: 2
+## Network stats: elapsed time=1128ms (0ms mobile, 0ms wifi, 1128ms not connected)
+** System appears to have crashed at event 2 of 5000 using seed 97328553

@@ -1,0 +1,27 @@
+// CRASH: com.evancharlton.mileage (pid 10678)
+// Short Msg: java.lang.VerifyError
+// Long Msg: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.VehiclesTable because it failed compile-time verification (declaration of 'com.evancharlton.mileage.provider.tables.VehiclesTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.VehiclesTable because it failed compile-time verification (declaration of 'com.evancharlton.mileage.provider.tables.VehiclesTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:79)
+// 	at java.lang.reflect.Constructor.newInstance(Native Method)
+// 	at java.lang.Class.newInstance(Class.java:1606)
+// 	at android.app.ActivityThread.installProvider(ActivityThread.java:4987)
+// 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4594)
+// 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4534)
+// 	at android.app.ActivityThread.access$1500(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1364)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// 
+** Monkey aborted due to error.
+Events injected: 33
+## Network stats: elapsed time=280ms (0ms mobile, 0ms wifi, 280ms not connected)
+** System appears to have crashed at event 33 of 5000 using seed 4319101

@@ -1,0 +1,42 @@
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    // activityResuming(com.evancharlton.mileage)
+    // activityResuming(com.evancharlton.mileage)
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    // Injection Failed
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+// CRASH: com.evancharlton.mileage (pid 11801)
+// Short Msg: java.lang.IllegalArgumentException
+// Long Msg: java.lang.IllegalArgumentException: Too many bind arguments.  13 arguments were provided but the statement needs 12 arguments.
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.IllegalArgumentException: Too many bind arguments.  13 arguments were provided but the statement needs 12 arguments.
+// 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:68)
+// 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+// 	at android.database.sqlite.SQLiteDatabase.updateWithOnConflict(SQLiteDatabase.java:1574)
+// 	at android.database.sqlite.SQLiteDatabase.update(SQLiteDatabase.java:1522)
+// 	at com.evancharlton.mileage.provider.tables.VehiclesTable.update(VehiclesTable.java:111)
+// 	at com.evancharlton.mileage.provider.FillUpsProvider.update(FillUpsProvider.java:256)
+// 	at android.content.ContentProvider$Transport.update(ContentProvider.java:328)
+// 	at android.content.ContentResolver.update(ContentResolver.java:1333)
+// 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:305)
+// 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+// 	at android.view.View.performClick(View.java:4780)
+// 	at android.view.View$PerformClick.run(View.java:19866)
+// 	at android.os.Handler.handleCallback(Handler.java:739)
+// 	at android.os.Handler.dispatchMessage(Handler.java:95)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// 
+    // Injection Failed
+** Monkey aborted due to error.
+Events injected: 709
+## Network stats: elapsed time=16680ms (0ms mobile, 0ms wifi, 16680ms not connected)
+** System appears to have crashed at event 709 of 5000 using seed 87731070

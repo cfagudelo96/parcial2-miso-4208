@@ -1,0 +1,51 @@
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    // Injection Failed
+// CRASH: com.evancharlton.mileage (pid 24208)
+// Short Msg: java.lang.VerifyError
+// Long Msg: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.ChartActivity$1 because it failed compile-time verification (declaration of 'com.evancharlton.mileage.ChartActivity$1' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.VerifyError: Rejecting class com.evancharlton.mileage.ChartActivity$1 because it failed compile-time verification (declaration of 'com.evancharlton.mileage.ChartActivity$1' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	at com.evancharlton.mileage.ChartActivity.onCreate(ChartActivity.java:40)
+// 	at android.app.Activity.performCreate(Activity.java:5990)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+// 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// 
+** Monkey aborted due to error.
+Events injected: 214
+// CRASH: com.evancharlton.mileage (pid 24256)
+// Short Msg: java.lang.VerifyError
+// Long Msg: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.ChartActivity$1 because it failed compile-time verification (declaration of 'com.evancharlton.mileage.ChartActivity$1' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.VerifyError: Rejecting class com.evancharlton.mileage.ChartActivity$1 because it failed compile-time verification (declaration of 'com.evancharlton.mileage.ChartActivity$1' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+// 	at com.evancharlton.mileage.ChartActivity.onCreate(ChartActivity.java:40)
+// 	at android.app.Activity.performCreate(Activity.java:5990)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+// 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// 
+## Network stats: elapsed time=8823ms (0ms mobile, 0ms wifi, 8823ms not connected)
+** System appears to have crashed at event 214 of 5000 using seed 8038651

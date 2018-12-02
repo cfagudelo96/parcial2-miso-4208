@@ -1,0 +1,17 @@
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    // activityResuming(com.android.settings)
+    // Injection Failed
+// CRASH: com.evancharlton.mileage (pid 11165)
+// Short Msg: java.lang.ArrayIndexOutOfBoundsException
+// Long Msg: java.lang.ArrayIndexOutOfBoundsException: length=28; index=28
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.ArrayIndexOutOfBoundsException: length=28; index=28
+// 	at com.evancharlton.mileage.adapters.VehicleStatisticsAdapter$1.run(VehicleStatisticsAdapter.java:100)
+// 
+** Monkey aborted due to error.
+Events injected: 404
+## Network stats: elapsed time=9572ms (0ms mobile, 0ms wifi, 9572ms not connected)
+** System appears to have crashed at event 404 of 5000 using seed 89512387

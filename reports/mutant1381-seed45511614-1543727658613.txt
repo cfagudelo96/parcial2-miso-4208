@@ -1,0 +1,103 @@
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+// CRASH: com.evancharlton.mileage (pid 8783)
+// Short Msg: android.content.res.Resources$NotFoundException
+// Long Msg: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2986)
+// 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3017)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2392)
+// 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// 	at android.content.res.Resources.getValue(Resources.java:1266)
+// 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2649)
+// 	at android.content.res.Resources.getLayout(Resources.java:1082)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:412)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:365)
+// 	at com.evancharlton.mileage.FieldListActivity.setupEmptyView(FieldListActivity.java:57)
+// 	at com.evancharlton.mileage.BaseListActivity.onResume(BaseListActivity.java:68)
+// 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1257)
+// 	at android.app.Activity.performResume(Activity.java:6076)
+// 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2975)
+// 	... 11 more
+// 
+// CRASH: com.evancharlton.mileage (pid 8810)
+// Short Msg: android.content.res.Resources$NotFoundException
+// Long Msg: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2986)
+// 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3017)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2392)
+// 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// 	at android.content.res.Resources.getValue(Resources.java:1266)
+// 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2649)
+// 	at android.content.res.Resources.getLayout(Resources.java:1082)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:412)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:365)
+// 	at com.evancharlton.mileage.FieldListActivity.setupEmptyView(FieldListActivity.java:57)
+// 	at com.evancharlton.mileage.BaseListActivity.onResume(BaseListActivity.java:68)
+// 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1257)
+// 	at android.app.Activity.performResume(Activity.java:6076)
+// 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2975)
+// 	... 11 more
+// 
+// CRASH: com.evancharlton.mileage (pid 8828)
+// Short Msg: android.content.res.Resources$NotFoundException
+// Long Msg: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// Build Label: Android/sdk_google_phone_x86_64/generic_x86_64:5.1.1/LMY48X/5056529:userdebug/test-keys
+// Build Changelist: 5056529
+// Build Time: 1539054241000
+// java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2986)
+// 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3017)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2392)
+// 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:135)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:372)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+// Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// 	at android.content.res.Resources.getValue(Resources.java:1266)
+// 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2649)
+// 	at android.content.res.Resources.getLayout(Resources.java:1082)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:412)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:365)
+// 	at com.evancharlton.mileage.FieldListActivity.setupEmptyView(FieldListActivity.java:57)
+// 	at com.evancharlton.mileage.BaseListActivity.onResume(BaseListActivity.java:68)
+// 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1257)
+// 	at android.app.Activity.performResume(Activity.java:6076)
+// 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2975)
+// 	... 11 more
+// 
+    // Injection Failed
+** Monkey aborted due to error.
+Events injected: 69
+## Network stats: elapsed time=2862ms (0ms mobile, 0ms wifi, 2862ms not connected)
+** System appears to have crashed at event 69 of 5000 using seed 45511614
