@@ -1,0 +1,46 @@
+Feature: Statistics
+  
+  Scenario: I see the statistics
+    When I touch the "Statistics" text
+    And I take a screenshot with filename "screenshot_statistics"
+    Then I should see "Fuel economy"
+    And I should see "Average fuel economy"
+    And I should see "Worst fuel economy"
+    And I should see "Best fuel economy"
+    And I should see "Distance between fillups"
+    And I should see "Average distance"
+    And I should see "Minimum distance"
+    And I should see "Maximum distance"
+    And I should see "Fillup costs"
+    And I should see "Average cost"
+    And I should see "Minimum cost"
+    And I should see "Maximum cost"
+    And I should see "Total cost"
+    And I should see "Cost last month"
+    And I should see "Estimated cost per month"
+    And I should see "Cost last year"
+    And I should see "Estimated cost per year"
+
+  Scenario: I see more of the statistics
+    When I touch the "Statistics" text
+    And I scroll down
+    And I take a screenshot with filename "screenshot_scrolldown_statistics"
+    Then I should see "Cost per distance"
+    And I should see "Average cost per mi"
+    And I should see "Minimum cost per mi"
+    And I should see "Maximum cost per mi"
+    And I should see "Fuel price"
+    And I should see "Average price"
+    And I should see "Minimum price"
+    And I should see "Maximum price"
+    And I should see "Fuel consumption"
+    And I should see "Smallest fillup"
+    And I should see "Largest fillup"
+    And I should see "Average fillup"
+    And I should see "Total fuel"
+    And I should see "Fuel per year"
+    And I should see "Fillup locations"
+    And I should see "North"
+    And I should see "South"
+    And I should see "East"
+    And I should see "West"
