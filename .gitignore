@@ -4,4 +4,4 @@ reports
 .idea
 /bdt/test_servers
 /bdt/bdt-reports
-/bdt/screenshot*.png
+/bdt/screenshots/**
