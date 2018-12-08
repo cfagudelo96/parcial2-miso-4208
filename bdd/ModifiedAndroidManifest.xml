@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.evancharlton.mileage" platformBuildVersionCode="3110" platformBuildVersionName="3.1.1">
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+  <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name">
+    <provider android:authorities="com.evancharlton.mileage" android:name="com.evancharlton.mileage.provider.FillUpsProvider"/>
+    <activity android:name="com.evancharlton.mileage.Mileage" android:theme="@android:style/Theme.NoTitleBar">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:label="@string/title_about" android:name="com.evancharlton.mileage.AboutActivity" android:theme="@android:style/Theme.Dialog"/>
+    <activity android:label="@string/title_fillup" android:name="com.evancharlton.mileage.FillupActivity"/>
+    <activity android:label="@string/title_fillup_info" android:name="com.evancharlton.mileage.FillupInfoActivity"/>
+    <activity android:label="@string/title_fillup_list" android:name="com.evancharlton.mileage.FillupListActivity"/>
+    <activity android:label="@string/title_field" android:name="com.evancharlton.mileage.FieldActivity"/>
+    <activity android:label="@string/title_field_list" android:name="com.evancharlton.mileage.FieldListActivity"/>
+    <activity android:label="@string/title_vehicle" android:name="com.evancharlton.mileage.VehicleActivity"/>
+    <activity android:label="@string/title_vehicle_list" android:name="com.evancharlton.mileage.VehicleListActivity"/>
+    <activity android:label="@string/title_vehicle_type" android:name="com.evancharlton.mileage.VehicleTypeActivity"/>
+    <activity android:label="@string/title_vehicle_type_list" android:name="com.evancharlton.mileage.VehicleTypeListActivity"/>
+    <activity android:label="@string/title_service_interval" android:name="com.evancharlton.mileage.ServiceIntervalActivity"/>
+    <activity android:label="@string/title_service_interval_list" android:name="com.evancharlton.mileage.ServiceIntervalsListActivity"/>
+    <activity android:label="@string/title_service_interval_template" android:name="com.evancharlton.mileage.ServiceIntervalTemplateActivity"/>
+    <activity android:label="@string/title_service_interval_template_list" android:name="com.evancharlton.mileage.ServiceIntervalTemplateListActivity"/>
+    <activity android:label="@string/title_settings" android:name="com.evancharlton.mileage.SettingsActivity"/>
+    <activity android:label="@string/title_statistics" android:name="com.evancharlton.mileage.VehicleStatisticsActivity"/>
+    <activity android:label="@string/title_importexport" android:name="com.evancharlton.mileage.ImportExportActivity"/>
+    <activity android:label="@string/title_import" android:name="com.evancharlton.mileage.ImportActivity"/>
+    <activity android:label="@string/title_export" android:name="com.evancharlton.mileage.ExportActivity"/>
+    <activity android:label="@string/title_export_csv" android:name="com.evancharlton.mileage.io.CsvExportActivity"/>
+    <activity android:label="@string/title_csv_map_columns" android:name="com.evancharlton.mileage.io.CsvColumnMappingActivity"/>
+    <activity android:label="@string/title_csv_map_vehicles" android:name="com.evancharlton.mileage.io.CsvVehicleMappingActivity"/>
+    <activity android:label="@string/title_csv_date_format" android:name="com.evancharlton.mileage.io.CsvDateFormatActivity"/>
+    <activity android:label="@string/title_import_csv" android:name="com.evancharlton.mileage.io.CsvImportActivity"/>
+    <activity android:label="@string/title_export_db" android:name="com.evancharlton.mileage.io.DbExportActivity"/>
+    <activity android:label="@string/title_import_db" android:name="com.evancharlton.mileage.io.DbImportActivity"/>
+    <activity android:label="@string/title_chart_avg_economy" android:name="com.evancharlton.mileage.charts.AverageFuelEconomyChart"/>
+    <activity android:label="@string/title_chart_min_economy" android:name="com.evancharlton.mileage.charts.WorstFuelEconomyChart"/>
+    <activity android:label="@string/title_chart_max_economy" android:name="com.evancharlton.mileage.charts.BestFuelEconomyChart"/>
+    <activity android:label="@string/title_chart_avg_distance" android:name="com.evancharlton.mileage.charts.AverageDistanceChart"/>
+    <activity android:label="@string/title_chart_min_distance" android:name="com.evancharlton.mileage.charts.MinimumDistanceChart"/>
+    <activity android:label="@string/title_chart_max_distance" android:name="com.evancharlton.mileage.charts.MaximumDistanceChart"/>
+    <activity android:label="@string/title_chart_avg_cost" android:name="com.evancharlton.mileage.charts.AverageCostChart"/>
+    <activity android:label="@string/title_chart_max_cost" android:name="com.evancharlton.mileage.charts.MaximumCostChart"/>
+    <activity android:label="@string/title_chart_min_cost" android:name="com.evancharlton.mileage.charts.MinimumCostChart"/>
+    <activity android:label="@string/title_chart_total_cost" android:name="com.evancharlton.mileage.charts.TotalCostChart"/>
+    <activity android:label="@string/title_chart_last_month_cost" android:name="com.evancharlton.mileage.charts.LastMonthCostChart"/>
+    <activity android:label="@string/title_chart_last_year_cost" android:name="com.evancharlton.mileage.charts.LastYearCostChart"/>
+    <activity android:label="@string/title_chart_avg_price" android:name="com.evancharlton.mileage.charts.AveragePriceChart"/>
+    <activity android:label="@string/title_chart_min_price" android:name="com.evancharlton.mileage.charts.MinimumPriceChart"/>
+    <activity android:label="@string/title_chart_max_price" android:name="com.evancharlton.mileage.charts.MaximumPriceChart"/>
+    <activity android:label="@string/title_chart_avg_fuel" android:name="com.evancharlton.mileage.charts.AverageVolumeChart"/>
+    <activity android:label="@string/title_chart_min_fuel" android:name="com.evancharlton.mileage.charts.MinimumVolumeChart"/>
+    <activity android:label="@string/title_chart_max_fuel" android:name="com.evancharlton.mileage.charts.MaximumVolumeChart"/>
+    <activity android:label="@string/title_chart_total_fuel" android:name="com.evancharlton.mileage.charts.TotalVolumeChart"/>
+    <activity android:label="@string/title_chart_north" android:name="com.evancharlton.mileage.charts.NorthChart"/>
+    <activity android:label="@string/title_chart_south" android:name="com.evancharlton.mileage.charts.SouthChart"/>
+    <activity android:label="@string/title_chart_east" android:name="com.evancharlton.mileage.charts.EastChart"/>
+    <activity android:label="@string/title_chart_west" android:name="com.evancharlton.mileage.charts.WestChart"/>
+    <service android:name="com.evancharlton.mileage.services.RecalculateEconomyService"/>
+    <service android:name="com.evancharlton.mileage.services.AutomaticBackupService"/>
+    <receiver android:name="com.evancharlton.mileage.receivers.MediaChangedReceiver">
+      <intent-filter>
+        <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+        <data android:scheme="file"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="com.evancharlton.mileage.alarms.IntervalReceiver"/>
+  </application>
+</manifest>

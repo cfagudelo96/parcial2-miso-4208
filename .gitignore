@@ -1,3 +1,7 @@
-/node_modules
-/reports
+node_modules
+reports
 .DS_STORE
+.idea
+/bdd/test_servers
+/bdd/bdd-reports
+/bdd/screenshot*.png
