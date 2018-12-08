@@ -1,0 +1,17 @@
+{
+  "name": "vrt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "find": "^0.2.9",
+    "resemblejs": "^3.0.0",
+    "shelljs": "^0.8.3"
+  }
+}
