@@ -1,0 +1,1 @@
+FileUtils.mv(Dir['./screenshots/**/*comparison.png'], './vrt-errors')

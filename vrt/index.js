@@ -23,14 +23,12 @@ function getDiff(mutant) {
         .onComplete(function (data) {
           const misMatchPercentage = data.misMatchPercentage;
           if (parseFloat(misMatchPercentage) > differenceThreshold) {
-            console.log(`Error en ${filename} de mutante ${mutant}`);
             const filenameWithoutExtension = filename.split('.')[0];
             fs.writeFileSync(
-              `${getMutantScreenshotsFolder(mutant)}/${filenameWithoutExtension}-comparison.png`,
+              `../bdt/vrt-errors/${filenameWithoutExtension}-mutant${mutant}-comparison.png`,
               data.getBuffer()
             );
           }
-          console.log(`Procesa mutante ${mutant}`);
         });
     });
   });
